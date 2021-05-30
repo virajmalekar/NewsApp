@@ -34,7 +34,7 @@
     <div style="clear:both"></div>
 </div>
 </body>
-<script src="{{asset('assets/datatable/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('assets/datatable/jquery.dataTables.min.js',env("APP_ASSETS"))}}"></script>
 <script>
     var headlineUrl = '{{ url('fetchTopHeadlines') }}';
     var selectedSource = "";
@@ -60,6 +60,6 @@
         News.setFollowedItem($('#search_article').val(),'addkeyword')
     })
 </script>
-<script src="{{asset('assets/scripts/News.js')}}"></script>
+<script src="{{asset('assets/scripts/News.js',env("APP_ASSETS"))}}"></script>
 
 </html>

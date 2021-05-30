@@ -37,9 +37,9 @@
     </table>
 </div>
 </body>
-<script src="{{asset('assets/datatable/jquery.dataTables.min.js')}}"></script>
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+<script src="{{asset('assets/datatable/jquery.dataTables.min.js',env("APP_ASSETS"))}}"></script>
+<link href="{{asset("assets/select2/select2.min.css",env("APP_ASSETS"))}}" rel="stylesheet"/>
+<script src="{{asset("assets/select2/select2.min.js",env("APP_ASSETS"))}}"></script>
 <script>
     var selectedSource = null;
     var headlineUrl = '{{ url('fetchTopHeadlines') }}';
@@ -58,6 +58,6 @@
         News.init("", "exploreBySources", headlineUrl, selectedSource);
     });
 </script>
-<script src="{{asset('assets/scripts/News.js')}}"></script>
+<script src="{{asset('assets/scripts/News.js',env("APP_ASSETS"))}}"></script>
 
 </html>

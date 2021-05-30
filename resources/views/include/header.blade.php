@@ -4,11 +4,11 @@
     <title>News App</title>
     <meta name="description" content="The News Application to wacth the latest news">
     <meta name="author" content="SitePoint">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="{{asset('assets/jquery/jquery.min.js')}}" crossorigin="anonymous"></script>
-    <link href="{{asset('assets/boostrap/css/bootstrap.min.css')}}" rel="stylesheet" crossorigin="anonymous">
-    <script src="{{asset('assets/boostrap/js/bootstrap.min.js')}}" crossorigin="anonymous"></script>
-    <link href="{{asset('assets/css/application.css')}}" crossorigin="anonymous">
+    <link href="{{asset("assets/fontawesome/fontawesome.css",env("APP_ASSETS"))}}" rel="stylesheet">
+    <script src="{{asset('assets/jquery/jquery.min.js',env("APP_ASSETS"))}}" crossorigin="anonymous"></script>
+    <link href="{{asset('assets/boostrap/css/bootstrap.min.css',env("APP_ASSETS"))}}" rel="stylesheet" crossorigin="anonymous">
+    <script src="{{asset('assets/boostrap/js/bootstrap.min.js',env("APP_ASSETS"))}}" crossorigin="anonymous"></script>
+    <link href="{{asset('assets/css/application.css',env("APP_ASSETS"))}}" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
