@@ -60,6 +60,7 @@ class LoginController extends Controller
         try {
             $user = Socialite::driver($driver)->user();
         } catch (Exception $e) {
+            dd($e->getMessage());
             return $this->sendFailedResponse($e->getMessage());
         }
         // check for email in returned user
