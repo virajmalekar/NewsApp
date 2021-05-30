@@ -30,9 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
     'google' => [
-        'client_id'     => env('GOOGLE_ID'),
+        'client_id' => env('GOOGLE_ID'),
         'client_secret' => env('GOOGLE_SECRET_KEY'),
-        'redirect'      => 'http://localhost:8000/oauth/google/callback',
+        'redirect' => env('APP_URL') . 'oauth/google/callback',
     ],
 
 ];
